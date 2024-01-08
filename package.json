@@ -10,8 +10,13 @@
   },
   "dependencies": {
     "next": "14.0.4",
+    "next-intl": "^3.4.0",
     "react": "^18",
     "react-dom": "^18"
+  },
+  "engines" : { 
+    "npm" : ">=8.0.0 <11.0.0",
+    "node" : ">=18.0.0 <21.0.0"
   },
   "devDependencies": {
     "@stylistic/eslint-plugin": "^1.5.1",
