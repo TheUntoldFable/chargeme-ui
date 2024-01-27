@@ -6,21 +6,20 @@ import chargerSrc from "@/../../public/assets/images/charger.png";
 import phoneHomeSrc from "@/../../public/assets/images/phone_home.png";
 import phoneAppSrc from "@/../../public/assets/images/phone_app.png";
 import arrow from "@/../../public/assets/images/arrow.png";
-import { PageProps } from "../../../.next/types/app/[locale]/technology/page";
 import { motion } from "framer-motion";
 import Wrapper from "../components/Wrapper";
+import { useTranslations } from "next-intl";
 
-interface TechnologyProps extends PageProps {
-  translations: Record<string, string>;
-}
+export default function Technology() {
 
-export default function Technology({ translations }: TechnologyProps) {
+  const t = useTranslations('Technology')
+
   return (
     <Wrapper className="bg-logoBG bg-cover">
       <div className="flex flex-1 justify-center items-center">
         <h1 className="sm:max-w-full font-semibold text-center pb-12 uppercase">
-          {`${translations.title}`}
-          <span className="text-chargeMeYellow ml-6">future</span>
+          {`${t('title')}`}
+          <span className="text-chargeMeYellow ml-6">{t('future')}</span>
         </h1>
       </div>
       <div className="
@@ -66,7 +65,7 @@ export default function Technology({ translations }: TechnologyProps) {
             animate={{ opacity: 1, decelerate: 600 }}
             exit={{ opacity: 0 }}
             transition={{ type: 'spring', ease: 'easeInOut', delay: 3 }}>
-            {translations.description}
+            {t('description')}
           </motion.p>
           <motion.div
             initial={{ opacity: 0 }}
