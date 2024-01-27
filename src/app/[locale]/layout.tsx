@@ -15,10 +15,13 @@ export default function RootLayout({
   params: { locale },
 }: {
   children: React.ReactNode;
-  params: any
+  params: any;
 }) {
   return (
     <html lang={locale}>
+      <head>
+        <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );

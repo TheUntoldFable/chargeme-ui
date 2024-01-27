@@ -2,10 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: Overpass;
+  src: '/public/assets/fonts/Overpass/Overpass-Regular.ttf';
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,12 +15,73 @@
   }
 }
 
+* {
+  font-family: Overpass;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+clear {
+  clear: both;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: Overpass;
+  color: #342e37;
+  background: #EBEBEB;
+  line-height: 1.2;
+  box-sizing: border-box;
+  max-width:100%;
+}
+
+h1 {
+  font-family: Overpass;
+  font-size: 4.2rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+h5 {
+  font-size: 1.4rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+input.text {
+  padding: 3px;
+  border: 1px solid #999999;
+}
+
+/* Tables
+    -----------------------------------------------------------------------------*/
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+td {
+  text-align: left;
+  font-weight: normal;
 }
