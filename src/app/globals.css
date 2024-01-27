@@ -20,6 +20,7 @@
   margin: 0;
   padding: 0;
   border: 0;
+  box-sizing: border-box;
 }
 
 clear {
@@ -39,13 +40,18 @@ body {
   color: #342e37;
   background: #EBEBEB;
   line-height: 1.2;
-  box-sizing: border-box;
-  max-width:100%;
+  overflow-x: hidden;
+
 }
 
 h1 {
-  font-family: Overpass;
+  display: inline-block;
   font-size: 4.2rem;
+}
+
+h1 span {
+  max-width: 100%; /* or adjust accordingly */
+  display: inline-block; /* Ensures it doesn't break onto a new line */
 }
 
 h2 {
