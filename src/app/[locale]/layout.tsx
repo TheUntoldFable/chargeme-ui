@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../globals.css";
 import React from "react";
+import { NextIntlClientProvider, useMessages } from "next-intl";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,11 +16,19 @@ export default function RootLayout({
   params: { locale },
 }: {
   children: React.ReactNode;
-  params: any
+  params: any;
 }) {
+
+  const messages = useMessages()
+
   return (
     <html lang={locale}>
-      <body className={inter.className}>{children}</body>
+      <head>
+        <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
+      </head>
+      <NextIntlClientProvider locale={locale} messages={messages}>
+        <body className={inter.className}>{children}</body>
+      </NextIntlClientProvider>
     </html>
   );
 }
