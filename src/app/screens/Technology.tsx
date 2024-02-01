@@ -24,6 +24,7 @@ export default function Technology() {
       </div>
       <div className="
           flex
+          min-h-96
           flex-1
           flex-col
           justify-center 
