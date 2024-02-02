@@ -15,7 +15,8 @@ export default function Technology() {
   const t = useTranslations('Technology')
 
   return (
-    <Wrapper className="bg-logoBG bg-cover">
+    <div className="bg-logoBG bg-cover bg-no-repeat">
+    <Wrapper>
       <div className="flex flex-1 justify-center items-center">
         <h1 className="sm:max-w-full text-center font-semibold pb-12 uppercase">
           {`${t('title')}`}
@@ -119,5 +120,6 @@ export default function Technology() {
         </div>
       </div>
     </Wrapper>
+    </div>
   );
 }
