@@ -18,10 +18,6 @@ const baseConfig: Config = {
         gray92: "#EBEBEB",
         chargeMeYellow: "#E9C500",
       },
-
-      fontFamily: {
-        Overpass: "Overpass",
-      },
     },
   },
   plugins: [],
