@@ -31,7 +31,14 @@ export default function Technology() {
           space-y-20 
           lg:space-y-0 
           lg:flex-row">
-        <div className="flex flex-1 w-full relative justify-center items-center">
+        <div className="
+         flex
+         flex-1
+         w-full 
+         relative
+         min-h-96
+         justify-center 
+         items-center">
           <motion.div className="z-10"
             initial={{ x: -300, opacity: 0 }}
             animate={{ x: 0, opacity: 1, decelerate: 600 }}
@@ -76,7 +83,14 @@ export default function Technology() {
             <Image src={arrow} alt="alt" />
           </motion.div>
         </div>
-        <div className="flex flex-1 w-full relative justify-center items-center">
+        <div className="
+        min-h-96
+        flex 
+        flex-1 
+        w-full 
+        relative 
+        justify-center 
+        items-center">
           <motion.div className="z-10"
             initial={{ x: 400, opacity: 0 }}
             animate={{ x: 0, opacity: 1, decelerate: 600 }}
