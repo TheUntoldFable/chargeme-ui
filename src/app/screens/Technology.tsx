@@ -17,7 +17,7 @@ export default function Technology() {
   return (
     <Wrapper className="bg-logoBG bg-cover">
       <div className="flex flex-1 justify-center items-center">
-        <h1 className="sm:max-w-full font-semibold text-center pb-12 uppercase">
+        <h1 className="sm:max-w-full text-center font-semibold pb-12 uppercase">
           {`${t('title')}`}
           <span className="text-chargeMeYellow ml-6">{t('future')}</span>
         </h1>
