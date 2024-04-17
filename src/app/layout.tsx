@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Overpass_Mono } from 'next/font/google'
 import './globals.css'
 import React from 'react'
-import Navigation from './components/navigation'
+import { Navigation } from './components/Navigation'
 
-const inter = Inter({ subsets: [ 'latin' ] })
+const overpass = Overpass_Mono({ subsets: [ 'latin' ] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={overpass.className}>
         <Navigation />
         {children}
       </body>
