@@ -1,28 +1,33 @@
-import type { Config } from "tailwindcss";
-
-const baseConfig: Config = {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
-  theme: {
-    extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "logoBG": "url('/assets/images/background.jpg')",
-      },
-      colors: {
-        gray92: "#EBEBEB",
-        chargeMeYellow: "#E9C500",
-      },
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+    content: [
+        "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+        "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+        "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    ],
+    theme: {
+        extend: {
+          backgroundImage: {
+            "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+            "gradient-conic":
+              "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+            "logoBG": "url('/assets/images/background.jpg')",
+          },
+          colors: {
+            gray92: "#EBEBEB",
+            chargeMeYellow: "#E9C500",
+            'gray': '#363636',
+            'gray-dark': '#1C1C1C',
+          },
+    
+          fontFamily: {
+            Overpass_Mono: "Overpass_Mono",
+          },
+          screens: {
+            'sm': '320px'
+          }
+        },
     },
-  },
-  plugins: [],
-};
+    plugins: [],
+}
 
-const config = baseConfig;
-
-export default config;

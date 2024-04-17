@@ -10,6 +10,10 @@
   }
 }
 
+html {
+    font-family: 'Overpass_Mono';
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -34,7 +38,6 @@ body {
   background: #EBEBEB;
   line-height: 1.2;
   overflow-x: hidden;
-
 }
 
 h1 {
