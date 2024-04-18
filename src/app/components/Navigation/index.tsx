@@ -17,14 +17,6 @@ const menuRoutes = [
         link: '/en/demo',
         text: 'DEMO'
     },
-<<<<<<< HEAD
-=======
-    {
-        link: '/en/shop',
-        text: 'SHOP',
-        mobileOnly: true,
-    },
->>>>>>> main
 ]
 
 export function Navigation() {
