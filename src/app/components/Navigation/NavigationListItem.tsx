@@ -12,8 +12,8 @@ const NavigationListItem: React.FC<NavigationListItemProps> = ({ isActive, link,
     return (
         <>
             {!isMobile ?
-                <li className={`${isActive ? 'bg-gray-dark px-10' : 'px-10'}`}>
-                    <a href={link} className="text-white text-xl pt-9 pb-9 block font-medium tracking-widest">
+                <li className={`${isActive ? 'bg-gray-dark px-7' : 'px-7'}`}>
+                    <a href={link} className="text-white text-l py-7 block font-medium tracking-widest">
                         {text}
                     </a>
                 </li>

@@ -17,11 +17,6 @@ const menuRoutes = [
         link: '/en/demo',
         text: 'DEMO'
     },
-    {
-        link: '/en/shop',
-        text: 'SHOP',
-        mobileOnly: true,
-    },
 ]
 
 export function Navigation() {
@@ -35,34 +30,34 @@ export function Navigation() {
                 <ul className="flex justify-between items-center max-w-screen-xl mx-auto">
                     <li>
                         <a href='/en'>
-                            <img src="/logo.png" width={208} height={52} className="object-cover w-full h-14" />
+                            <img src="/logo.png" width={175} height={45} className="object-cover w-full h-10 max-w-44" />
                         </a>
                     </li>
                     <li>
                         <ul className="flex space-x-4">
                             {menuRoutes.map((page, index) => {
-                                return !page?.mobileOnly && <NavigationListItem key={index} {...page} isActive={page.link === activeRoute} />
+                                return <NavigationListItem key={index} {...page} isActive={page.link === activeRoute} />
                             })}
                         </ul>
                     </li>
                     <li className={`${activeRoute === '/en/shop' ? 'bg-gray-dark' : ''}`}>
-                        <a href='/en/shop' className="text-white text-xl pt-9 pb-9 block font-medium tracking-widest flex items-center gap-5">
+                        <a href='/en/shop' className="text-white text-l block font-medium tracking-widest flex items-center gap-5">
                             SHOP
                             <Image
                                 src="/assets/svg/bag.svg"
                                 alt="logo"
-                                width={26}
-                                height={34} />
+                                width={22}
+                                height={30} />
                         </a>
                     </li>
                 </ul>
             </nav>
             {/* Mobile navigation */}
-            <nav className="bg-gray px-4 lg:hidden">
+            <nav className="bg-gray px-4 lg:hidden relative z-50">
                 <ul className="flex justify-between items-center max-w-screen-xl mx-auto py-4">
                     <li>
                         <a href='/en'>
-                            <img src="/logo.png" width={208} height={52} className="object-cover w-full h-14" />
+                            <img src="/logo.png" width={175} height={45} className="object-cover w-full h-10 max-w-44" />
                         </a>
                     </li>
                     <button className="navbar-burger flex items-center text-white" onClick={() => setOpenMobileMenu((prev) => !prev)}>
@@ -72,10 +67,20 @@ export function Navigation() {
                         </svg>
                     </button>
                 </ul>
-                <ul className={`${openMobileMenu ? 'flex absolute bg-gray flex-col top-108 w-full left-0' : 'h-0 invisible'}`}>
+                <ul className={`${openMobileMenu ? 'flex absolute bg-gray flex-col top-108 w-full left-0 z-1000' : 'h-0 invisible'}`}>
                     {menuRoutes.map((page, index) => {
                         return <NavigationListItem key={index} {...page} isActive={page.link === activeRoute} isMobile={true} />
                     })}
+                    <li className={`${activeRoute === '/en/shop' ? 'bg-gray-dark px-5' : 'px-5'}`}>
+                        <a href='/en/shop' className="text-white text-base py-6 block font-medium tracking-widest flex items-start gap-2">
+                            SHOP
+                            <Image
+                                src="/assets/svg/bag.svg"
+                                alt="logo"
+                                width={17}
+                                height={26} />
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </>
