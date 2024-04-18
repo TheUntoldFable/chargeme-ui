@@ -15,10 +15,10 @@ export default function Technology() {
   const t = useTranslations('Technology')
 
   return (
-    <div className="bg-logoBG bg-cover bg-no-repeat">
+    <div className="bg-logoBG bg-cover bg-no-repeat relative z-10">
     <Wrapper>
       <div className="flex flex-1 justify-center items-center">
-        <h1 className="sm:max-w-full text-center font-semibold pb-12 uppercase">
+        <h1 className="sm:max-w-full text-center font-semibold pb-12 uppercase text-3xl">
           {`${t('title')}`}
           <span className="text-chargeMeYellow ml-6">{t('future')}</span>
         </h1>
