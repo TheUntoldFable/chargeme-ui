@@ -26,8 +26,8 @@ export function Navigation() {
         <>
             {/* Desktop navigation */}
 
-            <nav className="bg-gray sm:hidden lg:block px-4">
-                <ul className="flex justify-between items-center max-w-screen-xl mx-auto">
+            <nav className="bg-gray sm:hidden lg:block">
+                <ul className="flex justify-between items-center mx-auto container">
                     <li>
                         <a href='/en'>
                             <img src="/logo.png" width={175} height={45} className="object-cover w-full h-10 max-w-44" />
