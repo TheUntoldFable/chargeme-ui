@@ -87,3 +87,8 @@ td {
   text-align: left;
   font-weight: normal;
 }
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+}
