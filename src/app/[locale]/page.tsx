@@ -1,5 +1,4 @@
 import { useTranslations } from "next-intl";
-import Image from "next/image";
 import React from "react";
 
 export default function Home() {
@@ -7,19 +6,16 @@ export default function Home() {
 
     return (
         <main className="bg-[url('/assets/images/wire-circles.png')] bg-cover bg-center">
-            <div className="flex min-h-screen flex-row items-center gap-56 container ">
-            <div className="basis-2/5">
-                <h1 className="uppercase mb-4">Cut the cord</h1>
+            <div className="flex min-h-screen flex-col items-center !mt-8 container xl:flex-row xl:mt-0 gap-y-10">
+            <div className="basis-3/5">
+                <h1 className="uppercase mb-4 text-3xl xl:text-5xl">Revolutionizing Wireless Charger</h1>
                 <p className="mb-7 max-w-lg font-bold">
-                    Introducing our game-changing wireless charging device,
-                    designed to liberate you from the hassle of tangled cables and limited charging ports.
-                    Say goodbye to the frustration of constantly searching for the right charging cable.
+                Wireless charging device with interactive features revolutionizing the restaurant industry. By combining convenience, comfort and modern technologies, the product aims to create more favorable conditions for customer service. From food ordering, integrated split payments and feedback form in our web application we tend to grow with the establishment, which places our device. We provide valuable data with it and help your restaurant to be more frequently visited.
                 </p>
-                <a href="/" className="bg-chargeMeYellow py-4 px-5 w-max block uppercase font-bold rounded-md">Cut it now</a>
+                <a href="/en/technology" className="bg-chargeMeYellow py-4 px-5 w-max block font-bold rounded-md">ChargeMe</a>
             </div>
-            <img src="/assets/images/charger-device.png" width={560} height={525} className="object-cover" />
+            <img src="/assets/images/charger-device.png" width={560} height={525} className="object-cover basis-2/5" />
             </div>
- 
         </main>
     );
 }
