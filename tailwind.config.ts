@@ -18,8 +18,8 @@ module.exports = {
             chargeMeYellow: "#E9C500",
             'gray': '#363636',
             'gray-dark': '#1C1C1C',
-          },
-    
+            grayDemoFormBg: '#3D3D3D'
+          }, 
           fontFamily: {
             Overpass_Mono: "Overpass_Mono",
           },
