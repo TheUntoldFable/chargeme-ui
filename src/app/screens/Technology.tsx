@@ -87,17 +87,18 @@ export default function Technology() {
         <div className="
         min-h-96
         flex 
-        flex-1 
+        flex-1
         w-full 
         relative 
         justify-center 
         items-center">
-          <motion.div className="z-10"
+          <motion.div className="z-10 relative"
             initial={{ x: 400, opacity: 0 }}
             animate={{ x: 0, opacity: 1, decelerate: 600 }}
             exit={{ x: -400, opacity: 0 }}
             transition={{ type: 'spring', ease: 'easeInOut', delay: 7 }}
           >
+            <a href='https://www.figma.com/proto/ecWSPOAtnnkQHkezqTzNiq/Web-Pages?node-id=315-38&starting-point-node-id=315%3A38' className="absolute w-3/6 h-1/4 top-1/2 right-4"></a>
             <Image
               src={phoneAppSrc}
               className="w-full"

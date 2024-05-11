@@ -4,9 +4,9 @@ export default function Demo() {
 
 
     return (
-        <main className="bg-[url('/assets/images/wire-circles.png')] bg-cover bg-center py-10">
-            <h1 className="text-center block mb-5 font-bold text-6xl">REQUEST A DEMO</h1>
-            <form className="max-w-xl mx-auto bg-grayDemoFormBg px-12 py-10 rounded-xl shadow-[12px_12px_29.5px_0px_rgba(0,0,0,0.56)]">
+        <main className="bg-[url('/assets/images/wire-circles.png')] bg-cover bg-center py-10 px-2">
+            <h1 className="text-center block mb-5 font-bold text-4xl lg:text-6xl">REQUEST A DEMO</h1>
+            <form className="max-w-xl mx-auto bg-grayDemoFormBg px-6 lg:px-12 py-10 rounded-xl shadow-[12px_12px_29.5px_0px_rgba(0,0,0,0.56)]">
                 <div className="mb-5 flex gap-4">
                     <div className="w-full">
                         <label htmlFor="email" className="block mb-2 text-sm font-medium text-white dark:text-white">Name</label>
