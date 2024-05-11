@@ -35,7 +35,7 @@ export default function Demo() {
                 </div>
                 <div className="mb-12">
                     <label htmlFor="email" className="block mb-2 text-sm font-medium text-white dark:text-white">What you need to learn about us?</label>
-                    <textarea id="email" rows="7" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+                    <textarea id="email" rows={7} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
                 </div>
                 <button type="submit" className="bg-chargeMeYellow py-4 px-5 w-max block font-bold rounded-md mx-auto my-0">Send Request</button>
             </form>
